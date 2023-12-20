@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class BadCounter
+{
+    public static void main() 
+    {
+        Scanner input = new Scanner(System.in);
+        
+        // Find the bug:
+        // Counts the zeros entered.
+        int query = input.nextInt();
+        int zeroes = 0;
+        
+        while (query == 0) {
+            zeroes++;
+
+            query = input.nextInt();
+        }
+        
+        System.out.println("Zeroes entered: " + zeroes);
+    }
+}
