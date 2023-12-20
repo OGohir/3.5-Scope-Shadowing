@@ -1,0 +1,21 @@
+
+public class ShadowedVariable
+{
+    int x = 0;
+    
+    // Changes the field x.
+    
+    void incrementX() {
+        x += 5;
+    }
+}
+
+public class Experiment
+{
+    public static void run() {
+        ShadowedVariable variable = new ShadowedVariable();
+        
+        
+    }
+}
+
